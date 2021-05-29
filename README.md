@@ -8,8 +8,8 @@
   [![UI ](https://img.shields.io/badge/User%20Interface-Link%20to%20UI-orange?style=flat-square&logo=appveyor)](https://adityanagar10.github.io/stray-helper-dog/)
 
 ## Preview
-<img src = "https://github.com/adityanagar10/stray-helper-dog/blob/master/images/website-demo-1.png"  height="500" alt="Website Demo-1">
-<img src = "https://github.com/adityanagar10/stray-helper-dog/blob/master/images/website-demo-2.png"  height="500" alt="Website Demo-2">
+<img src = "https://github.com/adityanagar10/stray-helper-dog/blob/master/images/website-demo-1.png"   alt="Website Demo-1">
+<img src = "https://github.com/adityanagar10/stray-helper-dog/blob/master/images/website-demo-2.png"  alt="Website Demo-2">
 	
 ## Built With
 
