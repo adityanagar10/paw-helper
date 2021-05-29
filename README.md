@@ -76,11 +76,11 @@ Advait Anand
 
 Debodyuti Biswas
 <p align="center">
-<img src = ""  height="120" alt="Debodyuti Biswas">
+<img src = "https://github.com/adityanagar10/stray-helper-dog/blob/master/images/Debodyuti.jpeg"  height="120" alt="Debodyuti Biswas">
 </p>
 <p align="center">
-<a href = "https://github.com/"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
-<a href = "https://www.linkedin.com/in/">
+<a href = "https://github.com/debodyuti1"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
+<a href = "https://www.linkedin.com/in/debodyuti-biswas-8172881aa/">
 <img src = "http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/>
 </a>
 </p>
