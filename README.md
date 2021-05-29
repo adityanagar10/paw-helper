@@ -11,11 +11,13 @@
 <img src = "https://github.com/adityanagar10/stray-helper-dog/blob/master/images/website-demo-1.png"  height="500" alt="Website Demo-1">
 <img src = "https://github.com/adityanagar10/stray-helper-dog/blob/master/images/website-demo-2.png"  height="500" alt="Website Demo-2">
 	
-## Functionalities
-- [ ]  < insert functionality >
-- [ ]  < insert functionality >
-- [ ]  < insert functionality >
-- [ ]  < insert functionality >
+## Built With
+
+- [Mongodb](https://www.mongodb.com/)
+- [Express JS](https://expressjs.com/)
+- [React JS](https://reactjs.org/)
+- [Node JS](https://nodejs.org/en/)
+- [Bootstrap](https://getbootstrap.com)
 
 <br>
 
