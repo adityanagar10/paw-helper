@@ -15,29 +15,25 @@
 
 - [Mongodb](https://www.mongodb.com/)
 - [Express JS](https://expressjs.com/)
-- [React JS](https://reactjs.org/)
 - [Node JS](https://nodejs.org/en/)
 - [Bootstrap](https://getbootstrap.com)
+- [Auth0](https://auth0.com/)
 
 <br>
 
+#### Clone Project
 
-## Instructions to run
-
-* Pre-requisites:
-	-  < insert pre-requisite >
-	-  < insert pre-requisite >
-
-* < directions to install > 
-```bash
-< insert code >
+```shell
+git clone https://github.com/adityanagar10/stray-helper-dog.git
 ```
 
-* < directions to execute >
+This Command  will copy a full  project  to your local  environment
+	
 
-```bash
-< insert code >
-```
+
+## Database
+
+MongoDB used as the Database.
 
 ## Contributors
 
