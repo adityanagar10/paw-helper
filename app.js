@@ -1,21 +1,18 @@
+//----------------- Modules -----------------//
+
 const express = require("express");
-
 const bp = require("body-parser");
-
 const mongoose = require("mongoose");
-
 const multer = require('multer');
-
 const fs = require('fs');
-
 const path = require('path');
-
 const {
   auth,
   requiresAuth
 } = require('express-openid-connect');
-
 const dotenv = require('dotenv');
+
+//----------------- DataBases -----------------//
 
 var storage = multer.diskStorage({
   destination: './uploads',
@@ -35,11 +32,8 @@ const upload = multer({
 }).single('myImage');
 
 function checkFileType(file, cb) {
-  // Allowed ext
   const filetypes = /jpeg|jpg|png|gif/;
-  // Check ext
   const extname = filetypes.test(path.extname(file.originalname).toLowerCase());
-  // Check mime
   const mimetype = filetypes.test(file.mimetype);
 
   if (mimetype && extname) {
@@ -50,8 +44,9 @@ function checkFileType(file, cb) {
 }
 
 
-
 const app = express();
+
+//----------------- Auth0 -----------------//
 
 const config = {
   authRequired: false,
@@ -62,7 +57,6 @@ const config = {
   issuerBaseURL: 'https://dev-mr46eaxb.us.auth0.com'
 };
 
-// auth router attaches /login, /logout, and /callback routes to the baseURL
 app.use(auth(config));
 
 app.use(express.static(__dirname));
@@ -73,14 +67,20 @@ app.use(bp.urlencoded({
   extended: true
 }));
 
+//----------------- Global Variables -----------------//
+
 const port = 3000;
 var city = "";
+var image = "";
+
+//----------------- MongoDB Atlas -----------------//
 
 mongoose.connect("mongodb+srv://admin:qsvQjmPPnADSp83d@pawhelper.5qct4.mongodb.net/doginfoDB", {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
 
+//----------------- MongoDB Schema -----------------//
 
 
 const doginfoSchema = {
@@ -96,45 +96,58 @@ const doginfoSchema = {
 
 const doginfo = new mongoose.model("doginfo", doginfoSchema);
 
-
+//----------------- Home Route -----------------//
 
 app.get('/', (req, res) => {
   // res.sendFile(__dirname + "/index.html");
   res.render('index', {
-    isAuthenticated: req.oidc.isAuthenticated()
-  }
-  
+      isAuthenticated: req.oidc.isAuthenticated()
+    }
+
   );
 });
 
+//----------------- Adopt -----------------//
 
 app.get('/adopt', requiresAuth(), function (req, res) {
   console.log(city);
   doginfo.find({
-    city:city
-  }, function(err, doginfo){
-    if(err){
+    city: city
+  }, function (err, doginfo) {
+    if (err) {
       console.log(err);
-    }else{
-      res.render("adoption",{
-        dog_info : doginfo
+    } else {
+      res.render("adoption", {
+        dog_info: doginfo
       });
     }
   })
 })
 
-app.post('/adopt', function(req,res){
+app.post('/adopt', function (req, res) {
   city = req.body.city;
   res.redirect('/adopt')
 })
 
+//----------------- Help and Success -----------------//
 
 app.get('/help', requiresAuth(), function (req, res) {
   res.render("register");
 })
 
 app.get('/success', requiresAuth(), function (req, res) {
-  res.render("successful");
+
+  doginfo.find({
+    img: image
+  }, function (err, doginfo) {
+    if (err) {
+      console.log(err);
+    } else {
+      res.render("successful", {
+        dog_infor: doginfo[0]
+      });
+    }
+  })
 })
 
 app.post('/help', function (req, res) {
@@ -145,6 +158,8 @@ app.post('/help', function (req, res) {
       if (req.file == undefined) {
         console.log("undefined");
       } else {
+
+        image = req.file.filename;
         var dogdetails = {
           name: req.body.name,
           number: req.body.phone,
@@ -158,18 +173,15 @@ app.post('/help', function (req, res) {
           if (err) {
             console.log(err);
           } else {
-            res.redirect('/');
+            res.redirect('/success');
           }
         });
       }
     }
   });
-
-
-
 });
 
-
+//----------------- Listen to Port -----------------//
 
 app.listen(port, function (req, res) {
   console.log("------------------------------------------------------     SERVER STARTED     ------------------------------------------------------");

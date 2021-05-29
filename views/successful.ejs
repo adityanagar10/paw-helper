@@ -35,7 +35,7 @@
 			<div class="wrap-login100">
 
 				<div class="login100-pic js-tilt" data-tilt>
-					<img src="login/images/Group_7.png" alt="IMG">
+					<img src="uploads/<%= dog_infor.img %>" alt="IMG">
 				</div>
 
 
@@ -46,7 +46,7 @@
 						<a href="/"><img src="login/images/home.png" alt="" id="home-icon-back"></a>
 					</span>
 					<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-						<h3 class="h3">Full Name</h3>
+						<h3 class="h3"><%= dog_infor.name %></h3>
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-user" aria-hidden="true"></i>
@@ -54,7 +54,7 @@
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-						<h3 class="h3">Phone number</h3>
+						<h3 class="h3"><%= dog_infor.number %></h3>
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-phone" aria-hidden="true"></i>
@@ -62,7 +62,7 @@
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate="Password is required">
-						<h3 class="h3">City</h3>
+						<h3 class="h3"><%= dog_infor.city %></h3>
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-home" aria-hidden="true"></i>
@@ -70,7 +70,7 @@
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate="Password is required">
-						<h3 class="h3">State</h3>
+						<h3 class="h3"><%= dog_infor.state %></h3>
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-building" aria-hidden="true"></i>
@@ -78,7 +78,7 @@
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-						<h3 class="h3">Pin Code</h3>
+						<h3 class="h3"><%= dog_infor.pin %></h3>
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-envelope" aria-hidden="true"></i>
@@ -88,10 +88,10 @@
 					<div class="wrap-input100" data-tilt style="padding-top: 10px;">
 
 					</div>
-					<button class="login100-form-btn" style="margin-bottom: 20px;">
+					<button href="/help" class="login100-form-btn" style="margin-bottom: 20px;">
 						Submit another response
 					</button>
-					<button class="login100-form-btn">
+					<button href="/" class="login100-form-btn">
 						Back to home
 					</button>
 			</div>
