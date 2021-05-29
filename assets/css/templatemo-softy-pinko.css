@@ -348,6 +348,32 @@ a.main-button-slider {
   color: #1e1e1e;
 }
 
+.help-button {
+  font-size: 15px;
+  border-radius: 20px;
+  padding: 17px 24px;
+
+  margin-left: 70px;
+  text-align: center;
+  background-color: #864000;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.25px;
+  margin: auto;
+  margin-top: 30px;
+  text-align: center;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+
+}
+
+.help-button:hover{
+  background-color: #ecb27b;
+  color: #1e1e1e;
+}
+
 a.main-button-slider:hover {
   background-color: #ffffff;
   
