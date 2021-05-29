@@ -75,7 +75,7 @@ app.use(bp.urlencoded({
 
 const port = 3000;
 
-mongoose.connect("mongodb://localhost:27017/doginfoDB", {
+mongoose.connect("mongodb+srv://admin:qsvQjmPPnADSp83d@pawhelper.5qct4.mongodb.net/doginfoDB", {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
@@ -146,5 +146,5 @@ app.post('/help', function (req, res) {
 
 
 app.listen(port, function (req, res) {
-  console.log("server started");
+  console.log("------------------------------------------------------     SERVER STARTED     ------------------------------------------------------");
 })
