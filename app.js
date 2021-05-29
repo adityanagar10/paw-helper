@@ -133,6 +133,10 @@ app.get('/help', requiresAuth(), function (req, res) {
   res.render("register");
 })
 
+app.get('/success', requiresAuth(), function (req, res) {
+  res.render("successful");
+})
+
 app.post('/help', function (req, res) {
   upload(req, res, (err) => {
     if (err) {
