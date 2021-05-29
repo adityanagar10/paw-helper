@@ -9,6 +9,7 @@
 
 ## Preview
 - Add pictures or important highlights from the Project (if any)
+	<img src = "https://github.com/adityanagar10/stray-helper-dog/blob/master/images/website-demo-1.png"  height="500" alt="Website Demo-1">
 ## Functionalities
 - [ ]  < insert functionality >
 - [ ]  < insert functionality >
