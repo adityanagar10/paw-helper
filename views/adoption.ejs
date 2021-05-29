@@ -45,40 +45,44 @@
         <!-- ***** Header Text End ***** -->
     </div>
 
-<section class="search-section">
-    <form action="/adopt" method="POST" class="search-section" role="search">
-        <label for="search">Search for stuff</label>
-        <input id="search" name="city" type="search" placeholder="Search by City" autofocus required />
-        <a href="https://www.google.com/"><button>Go</button></a>     
-      </form>
-</section>
+    <section class="search-section">
+        <form action="/adopt" method="POST" class="search-section" role="search">
+            <label for="search">Search for stuff</label>
+            <input id="search" name="city" type="search" placeholder="Search by City" autofocus required />
+            <a href="https://www.google.com/"><button>Go</button></a>
+        </form>
+    </section>
 
 
     <section class="section padding-top-70 padding-bottom-0" id="features">
         <div class="container">
+            <% for(var i=0; i<dog_info.length; i++) { %>
             <div class="row card">
                 <div class="col-lg-5 col-md-12 col-sm-12 align-self-center"
                     data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                    <img src="images/communitydog.jpg" class="rounded img-fluid d-block mx-auto" alt="App">
+                    <img src="uploads/<%= dog_info[i].img %>" class="rounded img-fluid d-block mx-auto" alt="App">
                 </div>
                 <div class="col-lg-1"></div>
                 <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-top-fix">
                     <div class="left-heading">
-                        <h2 class="section-title"><strong>Full Name: </strong></h2>
-                        <h2 class="section-title"><strong>Number: </strong></h2>
-                        <h2 class="section-title"><strong>City: </strong></h2>
-                        <h2 class="section-title"><strong>State: </strong></h2>
-                        <h2 class="section-title"><strong>Pincode: </strong></h2>
+                        <h2 class="section-title"><strong><%= dog_info[i].name %> </strong></h2>
+                        <h2 class="section-title"><strong><%= dog_info[i].number %> </strong></h2>
+                        <h2 class="section-title"><strong><%= dog_info[i].city %> </strong></h2>
+                        <h2 class="section-title"><strong><%= dog_info[i].state %> </strong></h2>
+                        <h2 class="section-title"><strong><%= dog_info[i].pin %> </strong></h2>
 
                     </div>
-                    
+
                 </div>
             </div>
+
+            <%  } %>
+
         </div>
     </section>
 
 
- 
+
 
     <footer id="footer">
         <div class="container">

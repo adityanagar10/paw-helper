@@ -74,6 +74,7 @@ app.use(bp.urlencoded({
 }));
 
 const port = 3000;
+var city = "";
 
 mongoose.connect("mongodb+srv://admin:qsvQjmPPnADSp83d@pawhelper.5qct4.mongodb.net/doginfoDB", {
   useNewUrlParser: true,
@@ -98,17 +99,35 @@ const doginfo = new mongoose.model("doginfo", doginfoSchema);
 
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + "/index.html");
+  // res.sendFile(__dirname + "/index.html");
+  res.render("index")
   
 });
 
+
 app.get('/adopt', requiresAuth(), function (req, res) {
-  res.sendFile(__dirname + "/adoption.html")
+  console.log(city);
+  doginfo.find({
+    city:city
+  }, function(err, doginfo){
+    if(err){
+      console.log(err);
+    }else{
+      res.render("adoption",{
+        dog_info : doginfo
+      });
+    }
+  })
+})
+
+app.post('/adopt', function(req,res){
+  city = req.body.city;
+  res.redirect('/adopt')
 })
 
 
 app.get('/help', requiresAuth(), function (req, res) {
-  res.sendFile(__dirname + "/login/register.html");
+  res.render("register");
 })
 
 app.post('/help', function (req, res) {
