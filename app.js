@@ -103,7 +103,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/adopt', requiresAuth(), function (req, res) {
-  res.send("You're logged in")
+  res.sendFile(__dirname + "/adoption.html")
 })
 
 
