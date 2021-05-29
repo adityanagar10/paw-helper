@@ -46,11 +46,11 @@
 Aditya Nagar
 
 <p align="center">
-<img src = ""  height="120" alt="Aditya Nagar">
+<img src = "https://github.com/adityanagar10/stray-helper-dog/blob/master/images/my-photo.jpg"  height="120" alt="Aditya Nagar">
 </p>
 <p align="center">
-<a href = "https://github.com/person1"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
-<a href = "https://www.linkedin.com/in/person1">
+<a href = "https://github.com/adityanagar10"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
+<a href = "https://www.linkedin.com/in/aditya-nagar-b33876114/">
 <img src = "http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/>
 </a>
 </p>
