@@ -1,0 +1,25 @@
+{
+  "name": "templatemo_535_softy_pinko",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">\r \t<h2 align=\"center\"> STRAY DOG HELPER </h2>\r \t<h4 align=\"center\"> Aims at helping Stray Dogs by providing them with a home. <h4>\r </p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adityanagar10/stray-helper-dog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adityanagar10/stray-helper-dog/issues"
+  },
+  "homepage": "https://github.com/adityanagar10/stray-helper-dog#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-openid-connect": "^2.4.0"
+  }
+}
