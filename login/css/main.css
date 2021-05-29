@@ -218,7 +218,7 @@ iframe {
 
   width: 100%;
   display: block;
-  padding-bottom: 54px;
+  padding-bottom: 32px;
 }
 
 
@@ -460,4 +460,10 @@ iframe {
     visibility: visible;
     opacity: 1;
   }
+}
+#home-icon-back{
+  height: 16px;
+  width: 16px;
+  float: right;
+  margin-top: 10px;
 }

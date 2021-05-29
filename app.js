@@ -99,11 +99,11 @@ const doginfo = new mongoose.model("doginfo", doginfoSchema);
 
 app.get('/', (req, res) => {
   res.sendFile(__dirname + "/index.html");
-  res.send(req.oidc.isAuthenticated() ? 'Logged in' : 'Logged out');
+  
 });
 
 app.get('/adopt', requiresAuth(), function (req, res) {
-  res.send("You're logged in")
+  res.sendFile(__dirname + "/adoption.html")
 })
 
 

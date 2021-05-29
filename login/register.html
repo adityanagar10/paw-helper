@@ -34,15 +34,17 @@
 		<div class="container-login100">
 			<div class="wrap-login100">
 				
+				<div class="login100-pic js-tilt" data-tilt>
+					<img src="login/images/Group_7.png" alt="IMG">					
+				</div>
+				
 
 				<form action="/help" method="POST" enctype="multipart/form-data" class="login100-form validate-form">
-					<div class="login100-pic js-tilt" data-tilt>
-						<input type="file" name="myImage" id="">
-					</div>
+					
 					<span class="login100-form-title">
 						Help a Dog
+						<a href="/"><img src="login/images/home.png" alt="" id="home-icon-back"></a>
 					</span>
-
 					<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
 						<input class="input100" type="text" name="name" placeholder="Full Name">
 						<span class="focus-input100"></span>
@@ -82,11 +84,10 @@
 							<i class="fa fa-envelope" aria-hidden="true"></i>
 						</span>
 					</div>
-
-
-
 					
-
+					<div class="wrap-input100" data-tilt>
+						<input type="file" name="myImage" id="image-input">
+					</div>
 					<div class="container-login100-form-btn">
 						<button class="login100-form-btn">
 							Submit
