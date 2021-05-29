@@ -22,6 +22,9 @@
 	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="login/css/util.css">
 	<link rel="stylesheet" type="text/css" href="login/css/main.css">
+	<link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet"/>
+	<link href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css" rel="stylesheet">
+
 	<!--===============================================================================================-->
 </head>
 
@@ -31,7 +34,7 @@
 		<div class="container-login100">
 			<div class="wrap-login100">
 				<div class="login100-pic js-tilt" data-tilt>
-					<img src="login/images/Group_7.png" alt="IMG">
+					<input type="file" name="image" id="">
 				</div>
 
 				<form class="login100-form validate-form">
@@ -43,15 +46,15 @@
 						<input class="input100" type="text" name="name" placeholder="Full Name">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
-							<i class="fa fa-envelope" aria-hidden="true"></i>
+							<i class="fa fa-user" aria-hidden="true"></i>
 						</span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-						<input class="input100" type="text" name="email" placeholder="Phone Number">
+						<input class="input100" type="text" name="phone" placeholder="Phone Number">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
-							<i class="fa fa-envelope" aria-hidden="true"></i>
+							<i class="fa fa-phone" aria-hidden="true"></i>
 						</span>
 					</div>
 
@@ -59,7 +62,7 @@
 						<input class="input100" type="password" name="pass" placeholder="City">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
-							<i class="fa fa-lock" aria-hidden="true"></i>
+							<i class="fa fa-home" aria-hidden="true"></i>
 						</span>
 					</div>
 
@@ -67,7 +70,7 @@
 						<input class="input100" type="password" name="pass" placeholder="State">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
-							<i class="fa WSSfa-lock" aria-hidden="true"></i>
+							<i class="fa fa-building" aria-hidden="true"></i>
 						</span>
 					</div>
 
@@ -81,14 +84,7 @@
 
 
 
-					<div class="text-center p-t-12">
-						<!-- <span class="txt1">
-							Upload Images
-						</span> -->
-						<a class="txt2" href="#">
-							Upload Images
-						</a>
-					</div>
+					
 
 					<div class="container-login100-form-btn">
 						<button class="login100-form-btn">
@@ -106,27 +102,17 @@
 			</div>
 		</div>
 	</div>
-
-
-
-
-	<!--===============================================================================================-->
-	<script src="login/vendor/jquery/jquery-3.2.1.min.js"></script>
-	<!--===============================================================================================-->
-	<script src="login/vendor/bootstrap/js/popper.js"></script>
-	<script src="login/vendor/bootstrap/js/bootstrap.min.js"></script>
-	<!--===============================================================================================-->
-	<script src="login/vendor/select2/select2.min.js"></script>
-	<!--===============================================================================================-->
-	<script src="login/vendor/tilt/tilt.jquery.min.js"></script>
-	<script>
-		$('.js-tilt').tilt({
-			scale: 1.1
-		})
-	</script>
-	<!--===============================================================================================-->
-	<script src="js/main.js"></script>
-
 </body>
+<script src="https://unpkg.com/filepond/dist/filepond.js"></script>
+<script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
+<script src="https://unpkg.com/filepond/dist/filepond.js"></script>
+<script src="https://unpkg.com/filepond-plugin-image-resize/dist/filepond-plugin-image-resize.js"></script>
+<script src="https://unpkg.com/filepond/dist/filepond.js"></script>
+<script>
+	FilePond.registerPlugin(FilePondPluginImagePreview);
+	FilePond.registerPlugin(FilePondPluginImageResize);
+	const inputElement = document.querySelector('input[type="file"]');
+	const pond = FilePond.create( inputElement );
+</script>
 
 </html>
