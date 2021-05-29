@@ -1,10 +1,3 @@
-/*
-
-Softy Pinko
-
-https://templatemo.com/tm-535-softy-pinko
-
-*/
 /* ---------------------------------------------
 Table of contents
 ------------------------------------------------
@@ -15,7 +8,7 @@ Table of contents
 05. welcome
 06. features
 07. team
-08. pricing
+08. impact
 09. blog
 10. contact
 11. footer
@@ -1171,10 +1164,10 @@ parallax & home seperator
 
 /* 
 ---------------------------------------------
-team
+testimonial
 --------------------------------------------- 
 */
-.team-item {
+.testimonial {
   background: #fff;
   box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.10);
   border-radius: 20px;
@@ -1183,11 +1176,11 @@ team
   padding-bottom: 25px;
 }
 
-.team-item:hover .team-content .team-info {
+.testimonial:hover .team-content .team-info {
   margin-left: 30px;
 }
 
-.team-item i {
+.testimonial i {
   display: block;
   margin-left: 25px;
   margin-top: 25px;
@@ -1196,7 +1189,7 @@ team
   text-align: center;
 }
 
-.team-item .user-image {
+.testimonial .user-image {
   width: 60px;
   height: 60px;
   overflow: hidden;
@@ -1211,12 +1204,12 @@ team
   float: left;
 }
 
-.team-item .team-content {
+.testimonial .team-content {
   text-align: left;
   overflow: hidden;
 }
 
-.team-item .team-content .team-info {
+.testimonial .team-content .team-info {
   float: left;
   margin-left: 20px;
   margin-top: 8px;
@@ -1226,7 +1219,7 @@ team
   transition: all 0.3s ease 0s;
 }
 
-.team-item .team-content .team-info .user-name {
+.testimonial .team-content .team-info .user-name {
   display: block;
   font-weight: 400;
   font-size: 17px;
@@ -1235,7 +1228,7 @@ team
   margin-bottom: 5px;
 }
 
-.team-item .team-content .team-info span {
+.testimonial .team-content .team-info span {
   display: block;
   font-weight: 400;
   font-size: 15px;
@@ -1243,7 +1236,7 @@ team
   letter-spacing: 0.25px;
 }
 
-.team-item .team-content p {
+.testimonial .team-content p {
   margin-top: 25px;
   padding-left: 25px;
   padding-right: 25px;
@@ -1257,10 +1250,10 @@ team
 
 /* 
 ---------------------------------------------
-pricing
+impact
 --------------------------------------------- 
 */
-.pricing-item {
+.impact-item {
   background: #FFFFFF;
   box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1);
   border-radius: 20px;
@@ -1269,38 +1262,38 @@ pricing
   padding: 30px 0px 40px 0px;
 }
 
-.pricing-item.active .pricing-header {
+.impact-item.active .impact-header {
   position: relative;
 }
 
-.pricing-item.active .pricing-header .pricing-title {
+.impact-item.active .impact-header .impact-title {
   color: #1e1e1e;
 }
 
-.pricing-item.active .pricing-body .price-wrapper {
+.impact-item.active .impact-body .impact-wrapper {
   background-color: #ff589e;
 }
 
-.pricing-item.active .pricing-body .price-wrapper .currency {
+.impact-item.active .impact-body .impact-wrapper .currency {
   color: #fff;
 }
 
-.pricing-item.active .pricing-body .price-wrapper .price {
+.impact-item.active .impact-body .impact-wrapper .impact {
   color: #fff;
 }
 
-.pricing-item.active .pricing-body .price-wrapper .period {
+.impact-item.active .impact-body .impact-wrapper .period {
   color: #fff;
 }
 
-.pricing-item .pricing-header {
+.impact-item .impact-header {
   text-align: center;
   display: block;
   position: relative;
   padding-bottom: 10px;
 }
 
-.pricing-item .pricing-header .pricing-title {
+.impact-item .impact-header .impact-title {
   font-weight: 500;
   font-size: 17px;
   letter-spacing: 0.25px;
@@ -1313,11 +1306,11 @@ pricing
   margin: auto;
 }
 
-.pricing-item .pricing-body {
+.impact-item .impact-body {
   margin-bottom: 40px;
 }
 
-.pricing-item .pricing-body .price-wrapper {
+.impact-item .impact-body .impact-wrapper {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 13px;
@@ -1329,7 +1322,7 @@ pricing
   border-radius: 20px;
 }
 
-.pricing-item .pricing-body .price-wrapper .currency {
+.impact-item .impact-body .impact-wrapper .currency {
   height: 47px;
   font-weight: 500;
   font-size: 32px;
@@ -1338,13 +1331,13 @@ pricing
   top: -1px;
 }
 
-.pricing-item .pricing-body .price-wrapper .price {
+.impact-item .impact-body .impact-wrapper .impact {
   font-weight: 500;
   font-size: 28px;
   color: #fff;
 }
 
-.pricing-item .pricing-body .price-wrapper .period {
+.impact-item .impact-body .impact-wrapper .period {
   font-weight: 400;
   font-size: 14px;
   color: #fff;
@@ -1352,7 +1345,7 @@ pricing
   letter-spacing: 0.88px;
 }
 
-.pricing-item .pricing-body .list li {
+.impact-item .impact-body .list li {
   text-align: center;
   margin-bottom: 12px;
   font-weight: 400;
@@ -1362,12 +1355,12 @@ pricing
   text-decoration: line-through;
 }
 
-.pricing-item .pricing-body .list li.active {
+.impact-item .impact-body .list li.active {
   color: #7a7a7a;
   text-decoration: none;
 }
 
-.pricing-item .pricing-footer {
+.impact-item .impact-footer {
   text-align: center;
   margin-top: 50px;
 }
