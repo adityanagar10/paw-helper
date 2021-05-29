@@ -140,6 +140,11 @@ body {
   border-bottom: 1px solid #eee;
 }
 
+#home-icon-back{
+  width: 5%;
+
+}
+
 .left-heading.light .section-title {
   color: #ffffff;
 }
@@ -152,6 +157,11 @@ body {
   letter-spacing: 0.25px;
   margin-bottom: 30px;
   position: relative;
+}
+
+.home{
+  text-align: center;
+  width: 50px;
 }
 
 .center-heading {

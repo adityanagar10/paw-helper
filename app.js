@@ -100,8 +100,11 @@ const doginfo = new mongoose.model("doginfo", doginfoSchema);
 
 app.get('/', (req, res) => {
   // res.sendFile(__dirname + "/index.html");
-  res.render("index")
+  res.render('index', {
+    isAuthenticated: req.oidc.isAuthenticated()
+  }
   
+  );
 });
 
 

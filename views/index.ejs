@@ -57,6 +57,10 @@
                             <li><a href="#testimonials">Testimonials</a></li>
                             <li><a href="#impact-plans">Contribute</a></li>
                             <li><a href="#footer">Contact Us</a></li>
+                            <% if(locals.user){  %> 
+                                <li><a href="/logout">Log Out</a></li>
+                                
+                                <%   }    %>
 
                         </ul>
                         <a class='menu-trigger'>
