@@ -21,7 +21,7 @@
 
 <br>
 
-#### Clone Project
+## Clone Project
 
 ```shell
 git clone https://github.com/adityanagar10/stray-helper-dog.git
