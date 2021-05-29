@@ -62,11 +62,11 @@ Aditya Nagar
 
 Advait Anand
 <p align="center">
-<img src = ""  height="120" alt="Advait Anand">
+<img src = "https://github.com/adityanagar10/stray-helper-dog/blob/master/images/advait.jpg"  height="120" alt="Advait Anand">
 </p>
 <p align="center">
-<a href = "https://github.com/person2"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
-<a href = "https://www.linkedin.com/in/person2">
+<a href = "https://github.com/Advaitanand"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
+<a href = "https://www.linkedin.com/in/advait-anand-02a563154/">
 <img src = "http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/>
 </a>
 </p>
