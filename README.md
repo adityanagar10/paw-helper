@@ -9,32 +9,31 @@
 
 ## Preview
 <img src = "https://github.com/adityanagar10/stray-helper-dog/blob/master/images/website-demo-1.png"  height="500" alt="Website Demo-1">
+<img src = "https://github.com/adityanagar10/stray-helper-dog/blob/master/images/website-demo-2.png"  height="500" alt="Website Demo-2">
 	
-## Functionalities
-- [ ]  < insert functionality >
-- [ ]  < insert functionality >
-- [ ]  < insert functionality >
-- [ ]  < insert functionality >
+## Built With
+
+- [Mongodb](https://www.mongodb.com/)
+- [Express JS](https://expressjs.com/)
+- [Node JS](https://nodejs.org/en/)
+- [Bootstrap](https://getbootstrap.com)
+- [Auth0](https://auth0.com/)
 
 <br>
 
+#### Clone Project
 
-## Instructions to run
-
-* Pre-requisites:
-	-  < insert pre-requisite >
-	-  < insert pre-requisite >
-
-* < directions to install > 
-```bash
-< insert code >
+```shell
+git clone https://github.com/adityanagar10/stray-helper-dog.git
 ```
 
-* < directions to execute >
+This Command  will copy a full  project  to your local  environment
+	
 
-```bash
-< insert code >
-```
+
+## Database
+
+MongoDB used as the Database.
 
 ## Contributors
 
