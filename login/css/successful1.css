@@ -86,6 +86,11 @@
       border: none;
   }
   
+  #another_response{
+    text-decoration: none;
+    color: #fff;
+  }
+
   textarea {
     outline: none;
     border: none;
