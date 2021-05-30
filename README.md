@@ -1,16 +1,17 @@
 <p align="center">
-	<h2 align="center"> STRAY DOG HELPER </h2>
+	<h2 align="center"> PAW HELPER </h2>
 	<h4 align="center"> Aims at helping Stray Dogs by providing them with a home. <h4>
 </p>
 
 ---
-[![DOCS](https://img.shields.io/badge/Documentation-see%20docs-green?style=flat-square&logo=appveyor)](INSERT_LINK_FOR_DOCS_HERE) 
   [![UI ](https://img.shields.io/badge/User%20Interface-Link%20to%20UI-orange?style=flat-square&logo=appveyor)](https://adityanagar10.github.io/stray-helper-dog/)
 
 ## Preview
-<img src = "https://github.com/adityanagar10/stray-helper-dog/blob/master/images/website-demo-1.png"   alt="Website Demo-1">
+<img src = "https://github.com/adityanagar10/stray-helper-dog/blob/master/images/website-demo-1.jpeg"   alt="Website Demo-1">
 <img src = "https://github.com/adityanagar10/stray-helper-dog/blob/master/images/website-demo-2.png"  alt="Website Demo-2">
-	
+<img src = "https://github.com/adityanagar10/stray-helper-dog/blob/master/images/website-demo-3.jpeg"  alt="Website Demo-3">
+<img src = "https://github.com/adityanagar10/stray-helper-dog/blob/master/images/website-demo-4.jpeg"  alt="Website Demo-4">
+<img src = "https://github.com/adityanagar10/stray-helper-dog/blob/master/images/website-demo-5.jpeg"  alt="Website Demo-5">
 ## Built With
 
 - [Mongodb](https://www.mongodb.com/)
@@ -34,6 +35,9 @@ This Command  will copy a full  project  to your local  environment
 ## Database
 
 MongoDB used as the Database.
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ## Contributors
 
