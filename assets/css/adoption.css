@@ -139,9 +139,16 @@ body {
   margin-top: 100px;
   border-bottom: 1px solid #eee;
 }
+.home{
+  text-align: center;
+ 
+}
 
 #home-icon-back{
-  width: 5%;
+
+  align-items: center;
+  width: 50px;
+  padding: 10px;
 
 }
 
@@ -155,14 +162,11 @@ body {
   line-height: 42px;
   color: #1e1e1e;
   letter-spacing: 0.25px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   position: relative;
 }
 
-.home{
-  text-align: center;
-  width: 50px;
-}
+
 
 .center-heading {
   text-align: center;
@@ -1796,9 +1800,10 @@ input[type="search"] {
   width: var(--btn-width);
   font-weight: bold;
   background: var(--color-brand);
+  border: none;
+  outline:none;
   border-radius: 0 var(--rad) var(--rad) 0;
   color: white;
-
 }
 input:not(:placeholder-shown) {
   border-radius: var(--rad) 0 0 var(--rad);
@@ -1817,6 +1822,7 @@ label {
 #search{
   color: white;
   margin: auto;
+  border: none;
 }
 
 .search-section{
